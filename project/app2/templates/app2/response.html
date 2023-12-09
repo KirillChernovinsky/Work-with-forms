@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form</title>
+</head>
+<body>
+    <h1>News</h1>
+    <form action="" method="post">
+<!--        #подключение защитного механихзма токин csrf-->
+<!--        теперь данные уходят будто в никуда-->
+        {% csrf_token %}
+        <p>{{ all_values }}</p>
+<!--        <input type="text" placeholder="Имя" name="name">-->
+<!--        <input type="text" placeholder="Возраст" name="age">-->
+
+    </form>
+</body>
+</html>
